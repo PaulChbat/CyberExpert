@@ -1,0 +1,14 @@
+[
+  {
+    "log_summary": "Successful logon by svc_backup account from TEMP-XPS.",
+    "suggested_action": "Review system access logs and investigate the logon activity, and check for previous unsuccessful logons."
+  },
+  {
+    "log_summary": "DDoS Attack Detected on Web Server Targeting Port 80.",
+    "suggested_action": "Block IP, Isolate Server, and Analyze Attack Pattern. Then update system to prevent future attacks"
+  },
+  {
+    "log_summary": "XSS attack blocked by ModSecurity.",
+    "suggested_action": "Review how attack was performed, then implement counter measures"
+  }
+]
