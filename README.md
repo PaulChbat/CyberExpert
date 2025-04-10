@@ -22,7 +22,7 @@ The core of the application relies on a model fine-tuned specifically for this c
 ```text
 .
 ├── APP/                  # Contains the main application code (CyberExpert)
-│   └── ...             # (Placeholder: specific app files like main.py, utils.py, model loading logic etc.)
+│   └── ...             # (Placeholder: specific app files like AI Agent files and etc...)
 ├── DATA/                 # Contains dataset and preparation scripts
 │   ├── Dataset_final.json # The final dataset (10k records) used for fine-tuning
 │   └── data_prep.py      # Python script for cleaning/preparing raw data into Dataset_final.json format
