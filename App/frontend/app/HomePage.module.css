@@ -1,0 +1,197 @@
+/* File: app/HomePage.module.css */
+
+
+.container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    max-width: 1000px;
+    margin: 2rem auto; /* Center the container with some top/bottom margin */
+    padding: 1.5rem;
+  }
+  
+  .heading {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    resize: vertical; /* Allow vertical resizing */
+    background-color: #273E73;
+  }
+  
+  .textarea:disabled {
+    background-color: #f8f8f8;
+    cursor: not-allowed;
+  }
+  
+  .button {
+    display: block; /* Make button take full width available */
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 1.5rem; /* Space below button */
+  }
+  
+  .button:hover:not(:disabled) {
+    background-color: #005bb5;
+  }
+  
+  .buttonLoading {
+    cursor: not-allowed;
+    background-color: #ccc;
+  }
+  
+  .button:disabled:not(.buttonLoading) { /* Style for disabled but not loading */
+     background-color: #e0e0e0;
+     cursor: not-allowed;
+  }
+  
+  
+  .resultsArea {
+    margin-top: 2rem;
+  }
+  
+  .errorBox {
+    color: #d8000c; /* Dark red for text */
+    background-color: #ffd2d2; /* Light red background */
+    border: 1px solid #d8000c;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .summaryBox {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .summaryBox h2 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: #333;
+      font-size: 1.2rem;
+  }
+  
+  .summaryPre {
+    white-space: pre-wrap; /* Wraps text within the pre block */
+    word-wrap: break-word; /* Breaks long words if necessary */
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0; /* Remove default pre margin */
+    color: black;
+  }
+
+  .feedbackBox {
+    margin-top: 2rem; /* Space above the feedback section */
+    padding: 1.5rem;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px;
+    background-color: #f0f4f8; /* Slightly different background */
+  }
+  
+  .feedbackBox h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  
+  .feedbackInstructions {
+      margin-bottom: 1rem;
+      color: #555;
+      font-size: 0.9rem;
+  }
+  
+  .feedbackField {
+      margin-bottom: 1rem; /* Space between fields */
+  }
+  
+  .feedbackLabel {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #444;
+      font-size: 0.95rem;
+  }
+  
+  .feedbackSummaryDisplay {
+      background-color: #e9ecef; /* Indicate read-only */
+      padding: 0.5rem 0.8rem;
+      border-radius: 4px;
+      max-height: 150px; /* Limit height */
+      overflow-y: auto;  /* Add scroll if needed */
+      border: 1px solid #ced4da;
+      color: #495057; /* Standard text color */
+  }
+  
+  .feedbackTextarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #ffffff; /* White background for input */
+    color: #333;
+  }
+  
+  .feedbackTextarea:disabled {
+    background-color: #f8f8f8;
+    cursor: not-allowed;
+  }
+  
+  .feedbackButton {
+    width: auto; /* Don't force full width */
+    padding: 0.6rem 1.2rem; /* Slightly smaller padding */
+    font-size: 1rem; /* Slightly smaller font */
+    margin-top: 0.5rem; /* Space above the button */
+    margin-bottom: 1rem; /* Space below the button */
+    background-color: #28a745; /* Green for submit */
+  }
+  
+  .feedbackButton:hover:not(:disabled) {
+    background-color: #218838; /* Darker green */
+  }
+  
+  .feedbackMessageBox {
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  .feedbackSuccess {
+    color: #155724; /* Dark green text */
+    background-color: #d4edda; /* Light green background */
+    border: 1px solid #c3e6cb;
+  }
+  
+  .feedbackError {
+    color: #721c24; /* Dark red text */
+    background-color: #f8d7da; /* Light red background */
+    border: 1px solid #f5c6cb;
+  }
