@@ -18,11 +18,13 @@ The core of the application relies on a model fine-tuned specifically for this c
 * Actionable mitigation suggestions.
 
 ## Project Structure
+
+```text
 .
 ├── APP/                  # Contains the main application code (CyberExpert)
-│   └── ...             # (Placeholder for specific app files like main.py, utils.py, model loading logic etc.)
+│   └── ...             # (Placeholder: specific app files like main.py, utils.py, model loading logic etc.)
 ├── DATA/                 # Contains dataset and preparation scripts
 │   ├── Dataset_final.json # The final dataset (10k records) used for fine-tuning
-│   └── data_prep.py      # Python script used for cleaning/preparing the raw data into Dataset_final.json format
+│   └── data_prep.py      # Python script for cleaning/preparing raw data into Dataset_final.json format
 ├── FYP_Fine_Tuning.ipynb # Jupyter Notebook detailing the model fine-tuning process
-└── README.md             # This file
+└── README.md             # This file (you are here!)
